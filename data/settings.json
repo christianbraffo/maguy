@@ -1,0 +1,26 @@
+{
+  "shopName": "Maguy",
+  "tagline": "La cave qui te sert bien glacé",
+  "whatsapp": "2250700000000",
+  "phone": "+225 07 00 00 00 00",
+  "address": "Abidjan, Côte d'Ivoire",
+  "hours": [
+    { "days": "Lundi – Jeudi", "open": "10:00", "close": "23:00" },
+    { "days": "Vendredi – Samedi", "open": "10:00", "close": "02:00" },
+    { "days": "Dimanche", "open": "12:00", "close": "23:00" }
+  ],
+  "zones": [
+    { "name": "Cocody", "fee": 1000, "eta": "30 – 45 min" },
+    { "name": "Plateau", "fee": 1000, "eta": "30 – 45 min" },
+    { "name": "Marcory", "fee": 1000, "eta": "30 – 45 min" },
+    { "name": "Treichville", "fee": 1000, "eta": "30 – 45 min" },
+    { "name": "Koumassi", "fee": 1500, "eta": "40 – 60 min" },
+    { "name": "Yopougon", "fee": 2000, "eta": "45 – 70 min" },
+    { "name": "Abobo", "fee": 2000, "eta": "45 – 70 min" },
+    { "name": "Riviera / Angré", "fee": 1500, "eta": "40 – 60 min" },
+    { "name": "Bingerville", "fee": 2500, "eta": "60 – 80 min" }
+  ],
+  "freeDeliveryFrom": 25000,
+  "minOrder": 2000,
+  "banner": "Livraison OFFERTE dès 25 000 FCFA • Bien glacé en 30 min ❄️"
+}

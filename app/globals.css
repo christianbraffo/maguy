@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-night: #faf6f0;
+  --color-night-2: #f1e9de;
+  --color-night-3: #e6d9c9;
+  --color-ice: #0e9bb5;
+  --color-fire: #ff6b1a;
+  --color-fire-dark: #e5560a;
+  --color-frost: #3b2418;
+  --color-gold: #e0a100;
+  --color-leaf: #19a75a;
+  --font-sans: var(--f-body);
+  --font-display: var(--f-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  color-scheme: normal;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-night);
+  color: var(--color-frost);
+  font-family: var(--f-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-fire);
+  color: #fff;
+}
+
+.font-display {
+  font-family: var(--f-display), Impact, sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+/* Fond givré */
+.bg-frost-glow {
+  background:
+    radial-gradient(60% 50% at 80% 10%, rgba(34, 211, 238, 0.18), transparent 70%),
+    radial-gradient(50% 40% at 10% 90%, rgba(255, 107, 26, 0.14), transparent 70%),
+    var(--color-night);
+}
+
+.glass {
+  background: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0.65));
+  border: 1px solid rgba(59, 36, 24, 0.12);
+  box-shadow: 0 6px 24px -12px rgba(59, 36, 24, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+/* Titre contouré */
+.text-outline {
+  -webkit-text-stroke: 2px rgba(59, 36, 24, 0.55);
+  color: transparent;
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+/* Rotation du cercle "scroll" */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.spin-slow {
+  animation: spin-slow 16s linear infinite;
+}
+
+/* Flocons / bulles de froid */
+@keyframes float-up {
+  0% { transform: translateY(20px) scale(0.8); opacity: 0; }
+  20% { opacity: 0.8; }
+  100% { transform: translateY(-120px) scale(1.1); opacity: 0; }
+}
+.bubble {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), rgba(34,211,238,0.12) 60%, transparent 70%);
+  animation: float-up 7s ease-in infinite;
+  pointer-events: none;
+}
+
+/* Apparition au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+  100% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+}
+.pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+.pop {
+  animation: pop 0.35s ease;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track, .spin-slow, .bubble, .pulse-ring { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
 }

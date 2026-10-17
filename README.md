@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Maguy – boutique de boissons glacées
 
-## Getting Started
+Site e-commerce (Next.js + Tailwind CSS) pour la cave Maguy : catalogue, panier, commande (livraison ou retrait, paiement à la réception) et espace admin.
 
-First, run the development server:
+## Lancer
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build && npm start   # production
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Espace admin
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- URL : `/admin`
+- Mot de passe par défaut : `maguy2026` → **à changer** dans `.env.local` (`ADMIN_PASSWORD`, et mets une longue valeur aléatoire dans `ADMIN_SECRET`).
+- Tableau de bord, commandes (statuts, annulation = stock remis), produits (prix, formats, stocks, photo, visibilité), paramètres (WhatsApp, horaires, zones de livraison, frais, bandeau).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Données
 
-## Learn More
+Stockées en JSON dans `data/` (`products.json`, `orders.json`, `settings.json`). Les photos envoyées depuis l'admin vont dans `data/uploads/`.
+Sauvegarde = copier le dossier `data/`.
+Ce stockage convient à un serveur classique (VPS, `npm start`). Il ne convient pas à un hébergement « serverless » (Vercel…) : il faudrait alors passer à une vraie base de données.
 
-To learn more about Next.js, take a look at the following resources:
+## Photos produits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Mets des PNG détourés (fond transparent) dans `public/products/` et renseigne le chemin dans l'admin, ou envoie-les directement via la fiche produit de l'admin.
+Sans photo, un visuel bouteille/canette coloré est généré automatiquement.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## À personnaliser avant la mise en ligne
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Numéro WhatsApp, téléphone, adresse, horaires, zones et frais : `/admin/parametres`.
+2. Vrais produits, prix et stocks : `/admin/produits`.
+3. Mot de passe admin : `.env.local`.
+4. `SITE_URL` dans `.env.local` (pour le sitemap).
