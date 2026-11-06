@@ -15,7 +15,7 @@ export default async function Confirmation({ params }: { params: Promise<{ id: s
   if (!order) notFound();
 
   const lines = order.items.map((i) => `• ${i.qty} × ${i.name} (${i.format}) — ${fcfa(i.price * i.qty)}`).join("\n");
-  const msg = `Bonjour Maguy 👋\nCommande ${order.id}\n${lines}\n\nSous-total : ${fcfa(order.subtotal)}\n${
+  const msg = `Bonjour Cave Eden 👋\nCommande ${order.id}\n${lines}\n\nSous-total : ${fcfa(order.subtotal)}\n${
     order.mode === "livraison" ? `Livraison (${order.zone}) : ${order.fee ? fcfa(order.fee) : "offerte"}` : "Retrait à la cave"
   }\nTotal : ${fcfa(order.total)}\n\nNom : ${order.customer.name}\nTél : ${order.customer.phone}${
     order.mode === "livraison" ? `\nAdresse : ${order.zone}, ${order.address}` : ""

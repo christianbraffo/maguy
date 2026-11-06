@@ -19,8 +19,8 @@ const body = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Maguy – Boissons bien glacées livrées à Abidjan",
-    template: "%s | Maguy",
+    default: "Cave Eden – Boissons bien glacées livrées à Abidjan",
+    template: "%s | Cave Eden",
   },
   description:
     "Bières, sodas, jus, eaux et boissons énergisantes bien glacés. Commande en ligne, livraison rapide à Abidjan ou retrait à la cave.",

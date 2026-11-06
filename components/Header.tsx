@@ -45,7 +45,7 @@ export default function Header({ settings }: { settings: Settings }) {
         }`}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-          <Link href="/" className="group flex items-center gap-2" aria-label="Maguy – accueil">
+          <Link href="/" className="group flex items-center gap-2" aria-label="Cave Eden – accueil">
             <span className="rounded-b-xl bg-ice px-3 pb-1.5 pt-2 font-display text-2xl leading-none text-frost shadow-[0_0_24px_rgba(255,107,26,0.35)] transition group-hover:bg-fire group-hover:text-frost">
               {settings.shopName}
             </span>

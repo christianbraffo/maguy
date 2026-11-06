@@ -302,7 +302,7 @@
   {
     "id": "pack-soiree",
     "name": "Pack Soirée",
-    "brand": "Maguy",
+    "brand": "Cave Eden",
     "category": "Packs",
     "description": "6 Bock 65 cl + 6 Coca 33 cl + 2 sachets de glaçons. Tout pour bien démarrer.",
     "image": "/products/bock.png",
@@ -322,7 +322,7 @@
   {
     "id": "pack-glacons",
     "name": "Casier + Glaçons",
-    "brand": "Maguy",
+    "brand": "Cave Eden",
     "category": "Packs",
     "description": "1 casier Bock 12 x 65 cl livré avec 3 sachets de glaçons.",
     "image": "/products/bock.png",

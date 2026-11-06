@@ -1,4 +1,4 @@
-# Maguy – contexte projet
+# Cave Eden – contexte projet
 
 Site e-commerce d'une cave de boissons glacées à Abidjan (Côte d'Ivoire). Next.js 16 (App Router) + Tailwind CSS 4. Lire `node_modules/next/dist/docs/` avant d'utiliser une API Next (`params` est une Promise, `proxy` remplace `middleware`).
 

@@ -17,7 +17,7 @@ export default function Footer({ settings }: { settings: Settings }) {
           </span>
           <p className="mt-4 max-w-sm text-sm text-frost/70">{settings.tagline}. Commande en quelques clics, on te livre bien glacé ou tu passes récupérer à la cave.</p>
           <a
-            href={whatsappLink(settings, "Bonjour Maguy 👋")}
+            href={whatsappLink(settings, "Bonjour Cave Eden 👋")}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-110"

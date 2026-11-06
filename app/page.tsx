@@ -117,7 +117,7 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <Reveal>
             <h2 className="font-display text-4xl sm:text-6xl">
-              Pourquoi <span className="text-fire">Maguy</span> ?
+              Pourquoi <span className="text-fire">Cave Eden</span> ?
             </h2>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -188,7 +188,7 @@ export default async function Home() {
               <p className="mt-5 text-sm text-frost/70">📍 {settings.address}</p>
               <p className="text-sm text-frost/70">📞 {settings.phone}</p>
               <a
-                href={whatsappLink(settings, "Bonjour Maguy, je voudrais passer une commande 🍺")}
+                href={whatsappLink(settings, "Bonjour Cave Eden, je voudrais passer une commande 🍺")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-block rounded-full bg-[#25d366] px-6 py-3 font-bold text-white hover:brightness-110"

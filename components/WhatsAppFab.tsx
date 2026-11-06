@@ -9,7 +9,7 @@ export default function WhatsAppFab({ settings }: { settings: Settings }) {
   if (path.startsWith("/admin")) return null;
   return (
     <a
-      href={whatsappLink(settings, "Bonjour Maguy, je voudrais passer une commande 🍺")}
+      href={whatsappLink(settings, "Bonjour Cave Eden, je voudrais passer une commande 🍺")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Commander sur WhatsApp"

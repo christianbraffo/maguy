@@ -15,7 +15,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
       <header className="sticky top-0 z-30 border-b border-frost/10 bg-night-2/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
-            <Link href="/admin" className="rounded-b-xl bg-ice px-3 pb-1.5 pt-2 font-display text-2xl leading-none text-frost">Maguy</Link>
+            <Link href="/admin" className="rounded-b-xl bg-ice px-3 pb-1.5 pt-2 font-display text-2xl leading-none text-frost">Cave Eden</Link>
             <span className="text-xs font-semibold uppercase tracking-widest text-frost/50">Admin</span>
           </div>
           <AdminNav newCount={newCount} />

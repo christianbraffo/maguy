@@ -1,6 +1,6 @@
-# Maguy – boutique de boissons glacées
+# Cave Eden – boutique de boissons glacées
 
-Site e-commerce (Next.js + Tailwind CSS) pour la cave Maguy : catalogue, panier, commande (livraison ou retrait, paiement à la réception) et espace admin.
+Site e-commerce (Next.js + Tailwind CSS) pour la cave Cave Eden : catalogue, panier, commande (livraison ou retrait, paiement à la réception) et espace admin.
 
 ## Lancer
 
