@@ -20,7 +20,7 @@ export default async function Dashboard() {
     { label: "Commandes aujourd'hui", value: String(today.length), tone: "text-ice" },
     { label: "Chiffre du jour", value: fcfa(revenue(today)), tone: "text-fire" },
     { label: "À traiter", value: String(pending.length), tone: "text-gold" },
-    { label: "Chiffre total", value: fcfa(revenue(valid)), tone: "text-emerald-300" },
+    { label: "Chiffre total", value: fcfa(revenue(valid)), tone: "text-frost" },
   ];
 
   return (
@@ -73,7 +73,7 @@ export default async function Dashboard() {
               {lowStock.slice(0, 8).map(({ p, f }) => (
                 <li key={p.id + f.label} className="flex items-center justify-between py-2.5">
                   <span>{p.name} <span className="text-xs text-frost/50">({f.label})</span></span>
-                  <span className={`rounded-full px-3 py-0.5 text-xs font-bold ${f.stock === 0 ? "bg-red-500/20 text-red-300" : "bg-gold/20 text-gold"}`}>
+                  <span className={`rounded-full px-3 py-0.5 text-xs font-bold ${f.stock === 0 ? "bg-fire/20 text-frost" : "bg-gold/20 text-gold"}`}>
                     {f.stock === 0 ? "Rupture" : `${f.stock} restants`}
                   </span>
                 </li>

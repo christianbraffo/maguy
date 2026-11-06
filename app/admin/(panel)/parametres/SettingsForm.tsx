@@ -64,8 +64,8 @@ export default function SettingsForm({ settings }: { settings: Settings }) {
         <button type="button" onClick={() => setHours((a) => [...a, { days: "Lundi – Dimanche", open: "10:00", close: "23:00" }])} className="rounded-full border border-frost/20 px-4 py-2 text-sm hover:border-ice">+ Ajouter une plage</button>
       </section>
 
-      {state?.error && <p role="alert" className="rounded-xl bg-red-500/15 p-3 text-sm text-red-300">{state.error}</p>}
-      {state?.ok && <p role="status" className="rounded-xl bg-leaf/20 p-3 text-sm text-emerald-300">Paramètres enregistrés ✓</p>}
+      {state?.error && <p role="alert" className="rounded-xl bg-red-500/15 p-3 text-sm text-frost">{state.error}</p>}
+      {state?.ok && <p role="status" className="rounded-xl bg-leaf/20 p-3 text-sm text-frost">Paramètres enregistrés ✓</p>}
       <button disabled={pending} className="rounded-full bg-fire px-8 py-3 font-bold text-white hover:bg-fire-dark disabled:opacity-60">{pending ? "Enregistrement…" : "Enregistrer"}</button>
     </form>
   );

@@ -119,7 +119,7 @@ export default function Hero({ products, settings }: { products: Product[]; sett
               <defs>
                 <path id="circ" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" />
               </defs>
-              <text fontSize="11.5" fontWeight="600" letterSpacing="3.2" fill="#0e9bb5">
+              <text fontSize="11.5" fontWeight="600" letterSpacing="3.2" fill="#ff6b1a">
                 <textPath href="#circ">SCROLL · DOWN · BIEN GLACÉ ·</textPath>
               </text>
             </svg>

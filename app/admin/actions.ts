@@ -129,7 +129,7 @@ export async function saveProduct(_prev: FormState, fd: FormData): Promise<FormS
       const base = id;
       let n = 2;
       while (products.some((x) => x.id === id)) id = `${base}-${n++}`;
-      p = { id, name, brand, category, description: "", image: "", color: "#22d3ee", badge: "", oldPrice: 0, featured: false, active: true, formats };
+      p = { id, name, brand, category, description: "", image: "", color: "#ff6b1a", badge: "", oldPrice: 0, featured: false, active: true, formats };
     }
     p.name = name;
     p.brand = brand;

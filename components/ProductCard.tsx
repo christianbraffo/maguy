@@ -32,7 +32,7 @@ export default function ProductCard({ product }: { product: Product }) {
   }
 
   return (
-    <article className="group glass relative flex flex-col overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-1 hover:border-ice/50 hover:shadow-[0_20px_50px_-20px_rgba(34,211,238,0.5)]">
+    <article className="group glass relative flex flex-col overflow-hidden rounded-3xl transition duration-300 hover:-translate-y-1 hover:border-ice/50 hover:shadow-[0_20px_50px_-20px_rgba(255,107,26,0.35)]">
       {product.badge && (
         <span className={`absolute left-3 top-3 z-10 rounded-full px-3 py-1 text-[11px] font-extrabold uppercase tracking-wide ${BADGE_STYLE[product.badge]}`}>
           {product.badge}
@@ -40,7 +40,7 @@ export default function ProductCard({ product }: { product: Product }) {
       )}
       <Link
         href={`/boissons/${product.id}`}
-        className="relative flex h-56 items-end justify-center overflow-hidden bg-[radial-gradient(70%_70%_at_50%_100%,rgba(34,211,238,0.22),transparent)] px-6 pt-8"
+        className="relative flex h-56 items-end justify-center overflow-hidden bg-[radial-gradient(70%_70%_at_50%_100%,rgba(255,107,26,0.35),transparent)] px-6 pt-8"
         aria-label={`Voir ${product.name}`}
       >
         <ProductVisual

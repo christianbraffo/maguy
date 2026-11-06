@@ -64,7 +64,7 @@ export default function CartDrawer({ settings }: { settings: Settings }) {
                 {missing > 0 ? (
                   <>Plus que <span className="text-fire">{fcfa(missing)}</span> pour la livraison offerte 🚚</>
                 ) : (
-                  <span className="text-emerald-300">🎉 Livraison offerte !</span>
+                  <span className="text-frost">🎉 Livraison offerte !</span>
                 )}
               </p>
               <div className="mt-2 h-2 overflow-hidden rounded-full bg-frost/10">
@@ -89,7 +89,7 @@ export default function CartDrawer({ settings }: { settings: Settings }) {
                       <p className="font-display text-lg text-fire">{fcfa(sub)}</p>
                     </div>
                   </div>
-                  <button onClick={() => remove(line.productId, line.format)} className="self-start text-frost/40 hover:text-red-400" aria-label="Retirer">✕</button>
+                  <button onClick={() => remove(line.productId, line.format)} className="self-start text-frost/40 hover:text-frost" aria-label="Retirer">✕</button>
                 </li>
               ))}
             </ul>

@@ -9,8 +9,8 @@ const TONE: Record<OrderStatus, string> = {
   nouvelle: "bg-fire/20 text-fire",
   preparation: "bg-gold/20 text-gold",
   en_route: "bg-ice/20 text-ice",
-  terminee: "bg-leaf/20 text-emerald-300",
-  annulee: "bg-red-500/20 text-red-300",
+  terminee: "bg-leaf/20 text-frost",
+  annulee: "bg-fire/20 text-frost",
 };
 
 export default function OrdersList({ orders, initialFilter }: { orders: Order[]; initialFilter: OrderStatus | "all" }) {
@@ -68,7 +68,7 @@ export default function OrdersList({ orders, initialFilter }: { orders: Order[];
                         <p>{o.customer.name}</p>
                         <p>
                           <a className="underline" href={`tel:${o.customer.phone}`}>{o.customer.phone}</a>{" · "}
-                          <a className="text-emerald-300 underline" target="_blank" rel="noopener noreferrer" href={`https://wa.me/${o.customer.phone.replace(/\D/g, "").replace(/^(\d{10})$/, "225$1")}`}>WhatsApp</a>
+                          <a className="text-frost underline" target="_blank" rel="noopener noreferrer" href={`https://wa.me/${o.customer.phone.replace(/\D/g, "").replace(/^(\d{10})$/, "225$1")}`}>WhatsApp</a>
                         </p>
                         {o.mode === "livraison" && <p className="mt-1 text-frost/80">{o.zone} — {o.address}</p>}
                         {o.note && <p className="mt-1 italic text-gold">« {o.note} »</p>}
@@ -96,7 +96,7 @@ export default function OrdersList({ orders, initialFilter }: { orders: Order[];
                             {STATUS_LABEL[s]}
                           </button>
                         ))}
-                        <button disabled={pending} onClick={() => change(o.id, "annulee")} className="rounded-full bg-red-500/15 px-4 py-2 text-sm font-semibold text-red-300 hover:bg-red-500/25">
+                        <button disabled={pending} onClick={() => change(o.id, "annulee")} className="rounded-full bg-red-500/15 px-4 py-2 text-sm font-semibold text-frost hover:bg-red-500/25">
                           Annuler
                         </button>
                       </div>

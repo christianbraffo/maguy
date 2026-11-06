@@ -24,7 +24,7 @@ export default async function Confirmation({ params }: { params: Promise<{ id: s
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
       <div className="text-center">
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-leaf text-4xl shadow-[0_0_40px_rgba(25,167,90,0.6)]">✓</div>
+        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-leaf text-4xl shadow-[0_0_40px_rgba(59,36,24,0.4)]">✓</div>
         <h1 className="mt-5 font-display text-5xl sm:text-6xl">Commande <span className="text-ice">reçue !</span></h1>
         <p className="mt-2 text-frost/75">
           Merci {order.customer.name.split(" ")[0]} ! On prépare ta commande. Garde ton numéro :

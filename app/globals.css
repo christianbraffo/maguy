@@ -4,12 +4,12 @@
   --color-night: #faf6f0;
   --color-night-2: #f1e9de;
   --color-night-3: #e6d9c9;
-  --color-ice: #0e9bb5;
+  --color-ice: #ff6b1a;
   --color-fire: #ff6b1a;
   --color-fire-dark: #e5560a;
   --color-frost: #3b2418;
-  --color-gold: #e0a100;
-  --color-leaf: #19a75a;
+  --color-gold: #ff6b1a;
+  --color-leaf: #3b2418;
   --font-sans: var(--f-body);
   --font-display: var(--f-display);
 }
@@ -43,7 +43,7 @@ body {
 /* Fond givré */
 .bg-frost-glow {
   background:
-    radial-gradient(60% 50% at 80% 10%, rgba(34, 211, 238, 0.18), transparent 70%),
+    radial-gradient(60% 50% at 80% 10%, rgba(255, 107, 26, 0.16), transparent 70%),
     radial-gradient(50% 40% at 10% 90%, rgba(255, 107, 26, 0.14), transparent 70%),
     var(--color-night);
 }
@@ -89,7 +89,7 @@ body {
 .bubble {
   position: absolute;
   border-radius: 9999px;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), rgba(34,211,238,0.12) 60%, transparent 70%);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), rgba(255,107,26,0.12) 60%, transparent 70%);
   animation: float-up 7s ease-in infinite;
   pointer-events: none;
 }

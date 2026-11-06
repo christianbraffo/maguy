@@ -11,7 +11,7 @@ const field = "w-full rounded-2xl border border-frost/15 bg-frost/5 px-4 py-2.5 
 export default function ProductForm({ product }: { product?: Product }) {
   const [state, action, pending] = useActionState(saveProduct, undefined);
   const [formats, setFormats] = useState(product?.formats ?? [{ label: "33 cl", price: 500, stock: 50 }]);
-  const [color, setColor] = useState(product?.color ?? "#22d3ee");
+  const [color, setColor] = useState(product?.color ?? "#ff6b1a");
 
   const update = (i: number, patch: Partial<(typeof formats)[number]>) =>
     setFormats((fs) => fs.map((f, j) => (j === i ? { ...f, ...patch } : f)));
@@ -66,7 +66,7 @@ export default function ProductForm({ product }: { product?: Product }) {
           <label className="flex items-center gap-2"><input type="checkbox" name="featured" defaultChecked={product?.featured ?? false} /> Mis en avant (accueil)</label>
         </div>
 
-        {state?.error && <p role="alert" className="rounded-xl bg-red-500/15 p-3 text-sm text-red-300">{state.error}</p>}
+        {state?.error && <p role="alert" className="rounded-xl bg-red-500/15 p-3 text-sm text-frost">{state.error}</p>}
         <div className="flex flex-wrap gap-3">
           <button disabled={pending} className="rounded-full bg-fire px-8 py-3 font-bold text-white hover:bg-fire-dark disabled:opacity-60">{pending ? "Enregistrement…" : "Enregistrer"}</button>
           <Link href="/admin/produits" className="rounded-full border border-frost/20 px-6 py-3 hover:border-ice">Annuler</Link>
@@ -92,7 +92,7 @@ export default function ProductForm({ product }: { product?: Product }) {
               if (confirm(`Supprimer « ${product.name} » définitivement ?`)) await deleteProduct(product.id);
             }}
             formNoValidate
-            className="w-full rounded-full bg-red-500/15 py-3 text-sm font-bold text-red-300 hover:bg-red-500/25"
+            className="w-full rounded-full bg-red-500/15 py-3 text-sm font-bold text-frost hover:bg-red-500/25"
           >
             Supprimer ce produit
           </button>

@@ -57,7 +57,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           {showOld && <p className="pb-1 text-frost/50 line-through">{fcfa(product.oldPrice)}</p>}
         </div>
         <p className="mt-1 text-sm">
-          {available ? (f.stock <= 10 ? <span className="text-gold">Plus que {f.stock} en stock !</span> : <span className="text-emerald-300">En stock</span>) : <span className="text-red-400">Rupture de stock</span>}
+          {available ? (f.stock <= 10 ? <span className="text-gold">Plus que {f.stock} en stock !</span> : <span className="text-frost">En stock</span>) : <span className="text-frost">Rupture de stock</span>}
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">

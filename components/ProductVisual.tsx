@@ -18,7 +18,7 @@ export default function ProductVisual({ product, className = "", priority }: Pro
       />
     );
   }
-  const c = product.color || "#22d3ee";
+  const c = product.color || "#ff6b1a";
   const can = product.category === "Énergisantes";
   const label = product.brand.length > 11 ? product.name : product.brand;
   return (

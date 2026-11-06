@@ -17,7 +17,7 @@ Site e-commerce d'une cave de boissons glacées à Abidjan (Côte d'Ivoire). Nex
 - Admin : `/admin`, mot de passe dans `.env.local` (`ADMIN_PASSWORD`, défaut `maguy2026`, à changer).
 
 ## État (2026-10-17)
-Tout le site client + admin est fait et testé en e2e. Données = exemples (WhatsApp bidon `2250700000000`).
+Tout le site client + admin est fait et testé en e2e. Données = exemples (WhatsApp réel `2250544855545`).
 Photos : Bock/Castel/Heineken/Coca/Guinness détourées dans `public/products/` (crédits CC dans le footer) ; autres produits = visuel SVG généré. `npm run build` OK, e2e PASS.
 Reste : données réelles de l'utilisateur (WhatsApp, quartiers/frais, horaires, produits/prix, photos PNG détourées) et changer le mot de passe admin.
 Hébergement : JSON = VPS/`npm start` seulement, pas Vercel.

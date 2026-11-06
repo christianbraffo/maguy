@@ -51,7 +51,7 @@ export default function Footer({ settings }: { settings: Settings }) {
         L&apos;abus d&apos;alcool est dangereux pour la santé. Vente interdite aux moins de 18 ans. À consommer avec modération.
         <br />© {new Date().getFullYear()} {settings.shopName}. Tous droits réservés.
         <p className="mx-auto mt-3 max-w-3xl text-[11px] leading-relaxed text-frost/35">
-          Photos provisoires via Wikimedia Commons : Bock – Erik Cleves Kristensen (CC BY 2.0) ; Castel – Cedric Sanou (CC BY-SA 4.0) ; Heineken – Uttamstef12 (CC BY-SA 3.0) ; Guinness – Pete Verdon (CC BY 2.5) ; Coca-Cola – Ralf Roletschek (domaine public). Détourées pour ce site.
+          Photos provisoires via Wikimedia Commons : Bock – Erik Cleves Kristensen (CC BY 2.0) ; Castel – Cedric Sanou (CC BY-SA 4.0) ; Heineken – Uttamstef12 (CC BY-SA 3.0) ; Guinness – Pete Verdon (CC BY 2.5) ; Coca-Cola – Ralf Roletschek (domaine public) ; Schweppes – Open Food Facts (CC BY-SA 3.0). Détourées pour ce site.
         </p>
       </div>
     </footer>

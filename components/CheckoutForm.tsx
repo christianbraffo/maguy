@@ -149,7 +149,7 @@ export default function CheckoutForm({ settings }: { settings: Settings }) {
                   <button type="button" aria-label="Moins" className="h-6 w-6 rounded-full bg-frost/10" onClick={() => setQty(line.productId, line.format, line.qty - 1)}>−</button>
                   <span className="w-5 text-center font-bold">{line.qty}</span>
                   <button type="button" aria-label="Plus" disabled={line.qty >= format.stock} className="h-6 w-6 rounded-full bg-frost/10 disabled:opacity-30" onClick={() => setQty(line.productId, line.format, line.qty + 1)}>+</button>
-                  <button type="button" aria-label="Retirer" className="ml-2 text-xs text-frost/40 hover:text-red-400" onClick={() => remove(line.productId, line.format)}>Retirer</button>
+                  <button type="button" aria-label="Retirer" className="ml-2 text-xs text-frost/40 hover:text-frost" onClick={() => remove(line.productId, line.format)}>Retirer</button>
                 </div>
               </div>
               <p className="text-sm font-bold">{fcfa(sub)}</p>
@@ -160,14 +160,14 @@ export default function CheckoutForm({ settings }: { settings: Settings }) {
           <div className="flex justify-between"><dt className="text-frost/70">Sous-total</dt><dd>{fcfa(subtotal)}</dd></div>
           <div className="flex justify-between">
             <dt className="text-frost/70">Livraison</dt>
-            <dd>{mode === "retrait" ? "Gratuit (retrait)" : free ? <span className="text-emerald-300">Offerte 🎉</span> : zoneObj ? fcfa(zoneObj.fee) : "Choisis ton quartier"}</dd>
+            <dd>{mode === "retrait" ? "Gratuit (retrait)" : free ? <span className="text-frost">Offerte 🎉</span> : zoneObj ? fcfa(zoneObj.fee) : "Choisis ton quartier"}</dd>
           </div>
           <div className="flex justify-between border-t border-frost/10 pt-3 text-base">
             <dt className="font-bold">Total à payer</dt>
             <dd className="font-display text-3xl text-fire">{fcfa(total)}</dd>
           </div>
         </dl>
-        {error && <p role="alert" className="rounded-xl bg-red-500/15 p-3 text-sm text-red-300">{error}</p>}
+        {error && <p role="alert" className="rounded-xl bg-red-500/15 p-3 text-sm text-frost">{error}</p>}
         <button
           type="submit"
           disabled={pending}
