@@ -498,5 +498,85 @@
         "stock": 20
       }
     ]
+  },
+  {
+    "id": "borsao",
+    "name": "Borsao Campo de Borja",
+    "brand": "Vin",
+    "category": "Vins & Liqueurs",
+    "description": "Vin rouge espagnol Campo de Borja 2022, 14,5 % vol.",
+    "image": "/products/borsao.jpg",
+    "color": "#9f1239",
+    "badge": "",
+    "oldPrice": 0,
+    "featured": false,
+    "active": true,
+    "formats": [
+      {
+        "label": "75 cl",
+        "price": 2500,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "id": "chateau-hibis",
+    "name": "Château Hibis",
+    "brand": "Vin",
+    "category": "Vins & Liqueurs",
+    "description": "Vin rouge Château Hibis, 14 % vol.",
+    "image": "/products/chateau-hibis.jpg",
+    "color": "#7f1d1d",
+    "badge": "",
+    "oldPrice": 0,
+    "featured": false,
+    "active": true,
+    "formats": [
+      {
+        "label": "75 cl",
+        "price": 2500,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "id": "north-pole",
+    "name": "North Pole Orange",
+    "brand": "Vodka",
+    "category": "Vins & Liqueurs",
+    "description": "Vodka à l'orange, 7 fois distillée, chill filtered.",
+    "image": "/products/north-pole.jpg",
+    "color": "#c2410c",
+    "badge": "",
+    "oldPrice": 0,
+    "featured": false,
+    "active": true,
+    "formats": [
+      {
+        "label": "75 cl",
+        "price": 3000,
+        "stock": 20
+      }
+    ]
+  },
+  {
+    "id": "roi-de-carreau",
+    "name": "Roi de Carreau",
+    "brand": "Vin",
+    "category": "Vins & Liqueurs",
+    "description": "Bordeaux supérieur, vin rouge.",
+    "image": "/products/roi-de-carreau.jpg",
+    "color": "#a16207",
+    "badge": "",
+    "oldPrice": 0,
+    "featured": false,
+    "active": true,
+    "formats": [
+      {
+        "label": "75 cl",
+        "price": 4000,
+        "stock": 20
+      }
+    ]
   }
 ]
