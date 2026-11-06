@@ -300,26 +300,6 @@
     ]
   },
   {
-    "id": "vin-rouge",
-    "name": "Vin Rouge de Table",
-    "brand": "Cave Maguy",
-    "category": "Vins & Liqueurs",
-    "description": "Vin rouge souple et fruité, idéal pour accompagner un repas.",
-    "image": "",
-    "color": "#7A1230",
-    "badge": "",
-    "oldPrice": 0,
-    "featured": false,
-    "active": true,
-    "formats": [
-      {
-        "label": "Bouteille",
-        "price": 4500,
-        "stock": 30
-      }
-    ]
-  },
-  {
     "id": "pack-soiree",
     "name": "Pack Soirée",
     "brand": "Maguy",
