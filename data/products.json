@@ -313,7 +313,7 @@
     "active": true,
     "formats": [
       {
-        "label": "75 cl",
+        "label": "Bouteille",
         "price": 4500,
         "stock": 30
       }
@@ -473,7 +473,7 @@
     "active": true,
     "formats": [
       {
-        "label": "75 cl",
+        "label": "Bouteille",
         "price": 3500,
         "stock": 20
       }
@@ -493,7 +493,7 @@
     "active": true,
     "formats": [
       {
-        "label": "75 cl",
+        "label": "Bouteille",
         "price": 4000,
         "stock": 20
       }
@@ -513,7 +513,7 @@
     "active": true,
     "formats": [
       {
-        "label": "75 cl",
+        "label": "Bouteille",
         "price": 2500,
         "stock": 20
       }
@@ -533,7 +533,7 @@
     "active": true,
     "formats": [
       {
-        "label": "75 cl",
+        "label": "Bouteille",
         "price": 2500,
         "stock": 20
       }
@@ -573,7 +573,7 @@
     "active": true,
     "formats": [
       {
-        "label": "75 cl",
+        "label": "Bouteille",
         "price": 4000,
         "stock": 20
       }
